@@ -17,13 +17,13 @@ module.exports = {
       host: 'localhost',
       network_id: '*',
       port: 8545,
-      provider: provider('http://127.0.0.1:8545')   
+      provider: provider('http://127.0.0.1:8545')
     },
     ganache: {
       host: 'localhost',
       network_id: '*',
       port: 7545,
-      provider: provider('http://127.0.0.1:7545')   
+      provider: provider('http://127.0.0.1:7545')
     },
     coverage: {
       host: 'localhost',
@@ -41,6 +41,11 @@ module.exports = {
       gas: 6000000,
       network_id: 1,
       provider: provider('https://mainnet.infura.io/' + process.env.INFURA),
+    },
+    ropsten: {
+      gas: 4000000,
+      network_id: 3,
+      provider: provider("https://ropsten.infura.io/"+ process.env.INFURA),
     }
   },
   solc: {
